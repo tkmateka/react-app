@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,500&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: rgb(214, 213, 213);
+    margin: 2em 3em;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 1em;
+    box-shadow: 0 0 15px #4b4b4b;
+}
+
+.btn-outlined, .btn-filled {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-outlined {
+    background-color: white;
+    border: 1px solid brown;
+    color: brown;
+}
+
+.btn-filled {
+    background-color: brown ;
+    color: white;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 1em;
+}
+
+.rightAlign {
+    justify-content: right;
+}
+
+.centerAlign {
+    justify-content: center;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    background: #000000ad;
+}
+
+.modal {
+    width: 300px;
+    margin: 25vh auto;
+    text-align: center;
 }
